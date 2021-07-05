@@ -1,0 +1,21 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: provider
+  datasource:
+    first:
+      url: jdbc:mysql://172.30.198.177:3306/cstas?useUnicode=true&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai
+      username: root
+      password: Ywzt@m2020
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    second:
+      url: jdbc:mysql://localhost:3306/test2?serverTimezone=Asia/Shanghai
+      username: bcy
+      password: 123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        serve-addr: http://10.231.132.83:8848
+

@@ -1,0 +1,33 @@
+server:
+  port: 5000
+spring:
+  main:
+   allow-bean-definition-overriding: true
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://10.231.132.83:8848
+    sentinel:
+      transport:
+        port: 15000
+        dashboard: localhost:8748
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+       - id: provider
+         uri: lb://provider
+         predicates:
+           - Path=/provider/**
+         filters:
+             - StripPrefix=1
+       - id: consumer
+         uri: lb://consumer
+         predicates:
+            - Path=/consumer/**
+         filters:
+             - StripPrefix=1

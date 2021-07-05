@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.first",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.bcy.config.DynamicDataSourceConfig",
+      "sourceMethod": "firstDataSource()"
+    },
+    {
+      "name": "spring.datasource.second",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.bcy.config.DynamicDataSourceConfig",
+      "sourceMethod": "secondDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

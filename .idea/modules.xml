@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/study/consumer/consumer.iml" filepath="$PROJECT_DIR$/study/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study/gateway/gateway.iml" filepath="$PROJECT_DIR$/study/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study/provider/provider.iml" filepath="$PROJECT_DIR$/study/provider/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/selfStudy3.iml" filepath="$PROJECT_DIR$/.idea/selfStudy3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study/study.iml" filepath="$PROJECT_DIR$/study/study.iml" />
+    </modules>
+  </component>
+</project>
